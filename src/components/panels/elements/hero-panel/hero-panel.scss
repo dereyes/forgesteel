@@ -205,6 +205,7 @@
   .hero-main-section#stats {
     display: grid;
     grid-auto-flow: row;
+    grid-template-columns: 2fr 2fr 6fr;
 
     .hero-main-column {
       display: contents;
@@ -212,7 +213,7 @@
 
     .ant-row {
       grid-row: 2;
-      grid-column: 1 / span 1;
+      grid-column: 1 / span 2;
     }
 
     .hero-right-column {
@@ -224,13 +225,13 @@
     }
 
     .header-text-panel.level-1 {
-      grid-column: 1 / -1;
+      grid-column: 1 / span 2;
       grid-row: 1;
     }
 
     .features-section {
       grid-row: 1 / span 4;
-      grid-column: 2;
+      grid-column: 3;
     }
   }
 
