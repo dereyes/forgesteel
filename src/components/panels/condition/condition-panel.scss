@@ -1,28 +1,28 @@
 .condition-panel {
-    border-radius: 5px;
-	padding: 5px 10px;
-	display: flex;
-	gap: 10px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 10px;
 
-	&:hover {
-		background-color: rgba(0, 0, 0, 0.06);
-	}
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+  }
 
-	.action-buttons {
-		margin: 5px 0;
-	}
+  .action-buttons {
+    margin: 5px 0;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-	.condition-panel {
-		&:hover {
-			background-color: rgba(255, 255, 255, 0.1);
-		}
+@media screen and (prefers-color-scheme: dark) {
+  .condition-panel {
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
 
-		.action-buttons {
-			button {
-				color: rgb(255, 255, 255);
-			}
-		}
-	}
+    .action-buttons {
+      button {
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
 }

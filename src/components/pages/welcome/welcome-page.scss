@@ -1,42 +1,42 @@
 .welcome-page {
-	height: 100%;
-	display: flex;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .welcome-page-content {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow-y: auto;
+    padding: 20px;
 
-	.welcome-page-content {
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.1);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-		overflow-y: auto;
-		padding: 20px;
+    .welcome-column {
+      max-width: 620px;
 
-		.welcome-column {
-			max-width: 620px;
-
-			.welcome-actions {
-				border-top: 1px solid rgba(5, 5, 5, 0.06);
-				padding-top: 20px;
-				flex: 0 0 auto;
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				gap: 10px;
-			}
-		}
-	}
+      .welcome-actions {
+        border-top: 1px solid rgba(5, 5, 5, 0.06);
+        padding-top: 20px;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+    }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-	.welcome-page {
-		.welcome-page-content {
-			.welcome-column {
-				.welcome-actions {
-					border-top-color: rgba(250, 250, 250, 0.6);
-				}
-			}
-		}
-	}
+@media screen and (prefers-color-scheme: dark) {
+  .welcome-page {
+    .welcome-page-content {
+      .welcome-column {
+        .welcome-actions {
+          border-top-color: rgba(250, 250, 250, 0.6);
+        }
+      }
+    }
+  }
 }
