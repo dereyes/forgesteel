@@ -10,11 +10,6 @@
     display: flex;
     gap: 20px;
 
-    @media print {
-      height: 100vh;
-      break-after: page;
-    }
-
     .hero-left-column,
     .hero-right-column {
       display: flex;
@@ -208,6 +203,7 @@
     grid-template-columns: 2fr 2fr 6fr;
     grid-template-rows: auto auto 1fr;
     gap: 30px;
+    height: 100vh;
 
     .hero-main-column {
       display: contents;
@@ -248,22 +244,27 @@
         margin-top: 0;
         padding-top: 0;
       }
+
+      .features-grid {
+        display: block;
+
+        .feature-panel {
+          // display: contents;
+        }
+      }
     }
   }
 
-  .hero-panel .hero-main-section .hero-main-column {
+  .hero-main-section:not(#stats) {
     .abilities-grid {
-    }
-
-    .features-grid {
-      display: block;
-      // columns: 2;
-
-      .feature-panel {
-        // break-after: page;
-        // page-break-inside: avoid;
-        display: contents;
+      grid-template-columns: 1fr 1fr;
+      .selectable-panel {
+        break-inside: avoid;
       }
     }
+  }
+
+  .main .main-footer {
+    display: none !important;
   }
 }
